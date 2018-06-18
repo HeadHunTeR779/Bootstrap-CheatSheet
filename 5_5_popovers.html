@@ -82,12 +82,14 @@
     <!--##################START HERE####################-->
 
     <!-- POPOVER -->
+    <!-- Again data-html needed to show html in data-content -->
     <button
       class="btn btn-danger"
       data-toggle="popover"
       data-placement="top"
       title="Popover Tite"
-      data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+      data-content="<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>"
+      data-html="true"
     >
       Toggle popover
     </button>
@@ -127,14 +129,14 @@
     <!-- DISMISSIBLE POPOVER -->
     <button
       id="myPopover"
-      class="btn btn-info"
+      class="btn btn-info btn-block"
       data-toggle="popover"
       data-placement="bottom"
       title="Popover Tite"
       data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
       data-trigger="focus"
     >
-      Toggle popover
+      Toggle popover(Dismissable, Click anywhere else and it will go away)
     </button>
 
     <hr>
